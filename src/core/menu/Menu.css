@@ -1,0 +1,258 @@
+/**
+*Nav Bar
+*/
+
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+    line-height: 20px;
+}
+
+.number {
+  line-height: 10px;
+}
+
+.cartMenuLink{
+  font-weight: 300;
+  border: transparent;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 23px;
+  outline: none;
+  font-family: inherit;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.signoutMenuLink{
+  border: transparent;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 28px;
+  outline: none;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+ /* cart badge */
+.cart-number {
+  font-style: italic;
+  background: rgb(234, 234, 234);
+  border-radius: 25px;
+  padding-right: 3px;
+  font-size: 12px;
+}
+
+a.nav-link {
+  text-decoration: none;
+}
+
+.nav-link {
+    padding: 6.4px 30px;
+    display: block;
+}
+
+.signup-menu{
+  background-color: black;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.sign-link{
+  display: block;
+  padding: 6.4px 17.6px;
+  display: block;
+  background-color: transparent;
+  border: none;
+}
+a.sign-link {
+  text-decoration: none;
+}
+
+li.sign-item {
+  line-height: 5px;
+  font-weight: 500;
+}
+
+/* Hamburger Nav */
+
+/* header */
+.header {
+    position: absolute;
+    top:0;
+    width: 100%;
+    max-height: 115px;
+    z-index: 3;
+    background-color: #ffffff;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .header li a {
+    display: block;
+  }
+  
+  .logo {
+    margin-top: 15px;
+    float: left;
+    text-decoration: none;
+  }
+
+  .logo img{
+    width: 250px;
+    }
+  .sign-dot{
+    color: white;
+    margin-right: -20px;
+    padding: 0;
+    line-height: 30px;
+  }
+  .signout-dot{
+    color: white;
+    margin: -3px 0 0 -25px;
+  }
+  /* menu */
+  .header .nav {
+    float: right;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    float: right;
+    margin-top: 21px;
+    padding: 23px 22px;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: rgb(0, 0, 0);
+    display: block;
+    height: 2.5px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 25px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: rgb(0, 0, 0);
+    content: '';
+    display: block;
+    height: 90%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 7px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -6px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  li.nav-item {
+    line-height: 30px;
+  }
+
+  .header .menu-btn ~ .nav {
+    max-height: 240px;
+    border-bottom: .5px solid #6f6f6f;
+    border-left: .5px solid #6f6f6f;
+    background-color: white;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 120px;
+    right: -291px;
+    display: none;
+  }
+  .header .menu-btn:checked ~ .nav {
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0;
+    animation: slide 0.5s forwards;
+    animation-delay: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  @-webkit-keyframes slide {
+    100% { right: 0; }
+  }
+  @keyframes slide {
+    100% { right: 0; }
+  }
+
+  @media (min-width: 735px) {
+    .logo img{
+      width: 300px;
+    }
+    .logo {
+      margin-top: 10px;
+    }
+    li.nav-item {
+      float: left;
+    }
+    li.nav-item.signout{
+      border-right: none;
+    }
+    .header .nav {
+      margin-top: 20px;
+      clear: none;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }  
+    .header .menu-btn:checked ~ .nav {
+      position: initial;
+      flex-direction: initial;
+    }
+    .header .menu-btn ~ .nav {
+      top: 31px;
+      right: 0px;
+      display: initial;
+      border: none;
+    }
+}

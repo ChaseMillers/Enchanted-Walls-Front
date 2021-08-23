@@ -1,0 +1,185 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1;
+    margin: 0;
+    color: #212529;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #fff;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+/**
+* Buttons 
+*/
+
+.button-yellow {
+    font: inherit;
+    cursor: pointer;
+    font-weight: normal;
+    color: #ffc107;
+    border-color: #ffc107;
+    border-style: solid;
+    background-color:transparent;
+    font-size: 16px;
+    padding: 6px 13px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    transition:.16s ease-in-out;
+    margin-right: 5px;
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.button-yellow:hover {
+    color: #ffffff;
+    background-color:#ffc107;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.button-blue{
+    font-weight: normal;
+    font-family: inherit;
+    display: inline-block;
+    margin: 5px 0;
+    border: 2px solid #007bff;
+    color: #007bff;
+    text-decoration:none;
+    font-size: 16px;
+    padding: 6px 13px;
+    transition:.16s ease-in-out;
+    margin-right: 5px;
+    width: fit-content;
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.button-blue:hover{
+    background-color: #007bff;
+    color: white;
+}
+
+.button-green {
+    width: 100%;
+    margin-left: 30px;
+    max-height: 40px;
+    font-weight: normal;
+    font-family: inherit;
+    display: inline-block;
+    margin-top: 5px;
+    color: #3fc380;
+    border: 2px solid #3fc380;
+    border-style: solid;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 6px 13px;
+    transition: .16s ease-in-out;
+    margin-right: 5px;
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.button-green:hover {
+    color: #ffffff;
+    background-color:#3fc380;
+}
+
+.none{
+    display: none;
+}
+
+/**
+ * Part of User Links 
+*/
+
+.caution {
+    background-color: #d1ecf1;
+    border: 1px solid transparent; 
+    border-radius: 3px;
+    padding: 12px 20px; 
+    margin-bottom: 16px; 
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.main-container{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 25px;
+    margin-bottom: 24px; 
+}
+
+.banner-container h2 {
+    margin-top: -20px;
+}
+
+.content-container{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 10px;
+}
+
+.banner-container{
+    margin-top: -200px;
+    text-align: center;
+    color: white;
+    padding-bottom: 180px;
+}
+
+
+.home-parallax {
+    /* The image used */
+    background-image: url("/images/woods-marketing.webp");
+  
+    /* Set a specific height */
+    height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.routes{
+    margin-top: 120px;
+    padding-left: 25px;
+    width: 100%;
+    line-height: 40px;
+    background: #f2f2f2;
+}
+
+.route-link{
+    color: rgb(136, 136, 136);
+}
+
+.route-link:hover{
+    color: rgb(0, 0, 0);
+}

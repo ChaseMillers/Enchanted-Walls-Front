@@ -1,0 +1,45 @@
+.view-product-layout{
+    display: flex;
+    justify-content: center;
+}
+
+.related-products-layout h1{
+    font-size: 28px;
+    font-weight: 500;
+    padding: 20px 0 0px;
+}
+
+.product-name{
+    font-size: 26px;
+}
+
+.product-container {
+    padding: 15px;
+    text-align: center;
+}
+
+.related-product-container{
+    display: flex;
+    justify-content: center;
+}
+
+.no-banner-image{
+    padding: 0;
+    margin: 0;
+    height: 0;
+}
+
+.routes-container{
+    display: flex;
+    align-items: center;
+}
+
+.seperate{
+    margin: 0 10px;
+}
+@media (max-width: 750px){
+    .product-container-view{
+        flex-direction: column;
+    }
+}
+

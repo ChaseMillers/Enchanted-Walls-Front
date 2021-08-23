@@ -1,0 +1,31 @@
+.sign-in{
+    margin: 10px 0;
+    width: 80px;
+    line-height: 25px;
+}
+
+.email-pass{
+    margin: 0px 8px;
+}
+
+@media screen and (min-width: 1200px){
+    .signup-container {
+        max-width: 1140px;
+    }
+}
+
+/* How it works */
+.how-it-works {
+    background-color:rgb(255, 255, 255);
+    color:rgb(110, 110, 110);
+    display:inline-block;
+}
+
+.how-it-works img{
+    width:100%;
+}
+
+.how-it-works ul{  
+    list-style-type: disc;
+    font-size:18px;
+}

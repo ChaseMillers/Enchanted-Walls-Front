@@ -1,0 +1,238 @@
+.in-stock {
+    display: inline-block;
+    padding: 5px 8px;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 5px;
+    vertical-align: baseline;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff;
+}
+
+.button-holder{
+   display: inline-block;
+}
+
+.product-title{
+    font-size: 13px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    color: rgb(148, 148, 148);
+    margin: 0;
+    line-height: 16px;
+}
+
+.product-header {
+    border-radius: 4px 4px 0px 0px;
+    padding: 12px 0 8px 0;
+    margin-bottom: 0;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.product {
+    max-width: 340px;
+}
+
+.product-info {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #4f4f4f;
+    font-weight: 400;
+}
+
+/********* Cart *******/
+.image-info-container-cart{
+    display: flex;
+    align-items: center;
+}
+
+.image-container-cart{
+    max-width: 150px;
+    display: inline-block;
+}
+
+.product-container-cart{
+    display: inline-block;
+    width: 200px;
+    padding-left: 10px;
+}
+
+.product-title-cart{
+    font-size: 14px;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    color: rgb(148, 148, 148);
+    margin: 0;
+    line-height: 16px;
+}
+
+.product-price-cart{
+    font-size: 14px;
+    font-weight: 400;
+    color: #4f4f4f;
+}
+
+.product-header-cart{
+    font-weight: bold;
+    margin:0;
+    color: black;
+}
+
+.product-link{
+    text-decoration: none;
+}
+.product-brief{
+    margin-top: 10px;
+}
+
+.button-holder-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-remove{
+    padding: 0;
+}
+
+.button-remove {
+    cursor: pointer;
+    font: inherit;
+    font-weight: normal;
+    color: #ffd146;
+    border: none;
+    background-color:transparent;
+    font-size: 14px;
+    padding: 0 10px;
+    transition:.16s ease-in-out;
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.button-remove:hover {
+    color: #ffc107;
+}
+
+.button-counter{
+    cursor: pointer; 
+    position: absolute;
+    padding: 0 12px;
+    top: 0px;
+    height: 28px;
+    bottom: 0px;
+    border: 0 none;
+    background: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    transition: all 0.2s ease-out;
+}
+.card-form-inputs {
+    display: block;
+    background: none;
+    text-align: center;
+    width: 100%;
+    padding: 5px 30px;
+    margin: 0;
+    border: 1px solid #000;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 0 1em;
+    background-color: transparent;
+    outline: none;
+}
+.update-options-container{
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    width: 78px;
+    height: 32px;
+    overflow: visible;
+    
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.minus{
+ left: 0
+}
+.plus{
+ right: 0
+}
+
+/********* view item card *******/
+
+.image-info-container-view{
+    display: flex;
+    align-items: center;
+}
+
+.image-container-view{
+    max-width: 500px;
+    display: inline-block;
+}
+
+.product-container-view{
+    display: flex;
+    padding-left: 10px;
+}
+
+.product-title-view{
+    font-size: 17px;
+    overflow-wrap: break-word;
+    color: rgb(131, 131, 131);
+    margin: 10px auto;
+    max-width: 350px;
+}
+
+.product-price-view{
+    font-size: 14px;
+}
+
+.product-header-view{
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+.info-container-view{
+    padding-left: 15px;;
+}
+.button-holder-view{
+    margin-top: 20px;
+}
+
+.about-view{
+    padding-top: 50px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.about-view:before,
+.about-view:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+.about-view:after {
+    margin: 0 0 0 20px;
+}
+
+.product-price-view{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 24px;
+}

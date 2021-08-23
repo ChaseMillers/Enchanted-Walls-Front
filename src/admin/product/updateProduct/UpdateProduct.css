@@ -1,0 +1,21 @@
+.update-product-container{
+   margin: 5px 0;
+   display: flex;
+}
+
+.product-inputs {
+    margin-bottom: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 8px 8px;
+}
+
+.update-product-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.no-margin{
+    margin-bottom: 0;
+}

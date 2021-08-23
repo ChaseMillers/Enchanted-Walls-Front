@@ -1,0 +1,40 @@
+.manage-products-layout{
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.manage-products-container{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 25px;
+    margin-bottom: 24px; 
+}
+
+.manage-products{
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 2px solid #ced4da;
+    width: fit-content;
+}
+
+.manage-products-row{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.total-products {
+   margin-top: 15px;
+}
+
+.manage-product-name{
+    display: block;
+    line-height: 30px;
+}
+

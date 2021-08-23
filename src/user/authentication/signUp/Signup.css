@@ -1,0 +1,29 @@
+.sign-in{
+    margin: 10px 0px;
+    line-height: 25px;
+}
+
+.form-inputs {
+    margin-bottom: 5px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    background-color:#cfe0f1a2;
+    border-radius: 5px;
+    padding: 8px 8px;
+}
+
+.signup-container {
+    margin: 15px 0 24px 15px;
+    width: 100%;
+    padding-right: 14px;
+}
+
+.email-pass{
+    margin: 0px 8px;
+}
+
+@media screen and (min-width: 1200px){
+    .signup-container {
+        max-width: 1140px;
+    }
+}
