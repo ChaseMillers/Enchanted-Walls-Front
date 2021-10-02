@@ -1,0 +1,182 @@
+.img-layout-container{
+    display: flex;
+    justify-content: center;
+}
+
+svg.animation {
+	max-width: 1200px;
+    position: absolute;
+    top: 0;
+}
+
+.backdrop-container {
+    top: 0;
+    position: absolute;
+    max-width: 1200px;
+}
+
+/********** FIRE Animation**********/
+$fireColor: rgb(255,80,0);
+$fireColorT: rgba(255,80,0,0);
+$dur: 1s;
+$blur: 0.02em;
+$fireRad: 3em;
+$parts: 50;
+$partSize: 5em;
+
+.fire {
+	font-size: .5vw;
+    filter: blur(0.02em);
+    -webkit-filter: blur(0.02em);
+    position: relative;
+    width: 7em;
+    margin-left: 9%;
+    margin-top: 51.7%;
+}
+.particle {
+	animation: rise $dur ease-in infinite;
+	background-image: radial-gradient($fireColor 20%,$fireColorT 70%);
+	border-radius: 50%;
+	mix-blend-mode: screen;
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	width: $partSize;
+	height: $partSize;
+	// spread particles out in time and x-position to get desired effect
+	@for $p from 1 through $parts {
+		&:nth-of-type(#{$p}) {
+			animation-delay: $dur * random();
+			left: calc((100% - #{$partSize}) * #{($p - 1)/$parts});
+		}
+	}
+}
+@keyframes rise {
+	from {
+		opacity: 0;
+		transform: translateY(0) scale(1);
+	}
+	25% {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		transform: translateY(-10em) scale(0);
+	}
+}
+@media screen and (min-width: 1200px){
+	.fire {
+		font-size: 6px;
+		margin-left: 109px;
+		margin-top: 621px;
+	}
+}
+@media screen and (max-width: 900px){
+	.fire {
+		margin-top: 51.3%;
+	}
+}
+@media screen and (max-width: 600px){
+	.fire {
+		margin-top: 50.3%;
+	}
+}
+@media screen and (max-width: 500px){
+	.fire {
+		margin-top: 50%;
+	}
+}
+@media screen and (max-width: 400px){
+	.fire {
+		margin-top: 49%;
+	}
+}
+@media screen and (max-width: 300px){
+	.fire {
+		margin-top: 48%;
+	}
+}
+@media screen and (max-width: 200px){
+	.fire {
+		margin-top: 47%;
+	}
+}
+
+
+
+
+
+
+/* Stick Arm! */
+
+use#stickArm{
+    animation-duration: 3s;
+    animation-name: stickArm;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes stickArm {
+    from {
+        transform: scaleX(1);
+    }
+  
+    to {
+        transition: all 5s ease;
+        transform: translateX(91px) translateY(-79px) rotate(7deg);
+    }
+  }
+
+  /* Racoons head #2 */
+use#head{
+    animation-duration: 4s;
+    animation-name: head;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes head {
+    from {
+        transform: scaleX(1);
+    }
+  
+    to {
+        transition: all 5s ease;
+		transform: translateX(-51px) translateY(86px) rotate(-5deg);
+		}
+  }
+
+/* Arm2nd */
+use#stick2nd{
+    animation-duration: 4s;
+
+    animation-name: stick2nd;
+	-webkit-animation-name: stick2nd;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes stick2nd {
+    from {
+        transform: scaleX(1);
+    }
+  
+    to {
+        transition: all 5s ease;
+		transform: translateX(-100px) translateY(182px) rotate(-10deg);
+		}
+  }
+
+  
+  /* Wave Arm on hover */
+use#waveArm{
+	transition: all 1s ease;
+}
+
+
+use#hover:hover use#waveArm{
+    animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+	animation-fill-mode: forwards;
+
+	transform: translateX(145px) translateY(-141px) rotate(10deg);
+}

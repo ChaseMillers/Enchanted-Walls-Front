@@ -73,7 +73,7 @@
 
 .ad-container{
    /* The image used */
-   background-image: url("/images/lake.webp");
+   background-image: url("/images/mainBackdrop.jpg");
   
    /* Set a specific height */
    height: 400px;

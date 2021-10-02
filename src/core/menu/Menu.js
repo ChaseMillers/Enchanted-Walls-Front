@@ -115,7 +115,7 @@ const Menu = ({ history }) => {
          
       </div>
       <a href="/" className="logo">
-        <img src="/images/swash-caps.webp" alt="Logo" />
+        <h1>Enchanted Walls</h1>
       </a>
       <div className="menu-container">
         <input className="menu-btn" type="checkbox" id="menu-btn" />

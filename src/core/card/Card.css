@@ -178,7 +178,7 @@
 }
 
 .image-container-view{
-    max-width: 500px;
+    max-width: 1584px;
     display: inline-block;
 }
 
@@ -206,6 +206,7 @@
 }
 
 .info-container-view{
+    min-width: 200px;
     padding-left: 15px;;
 }
 .button-holder-view{

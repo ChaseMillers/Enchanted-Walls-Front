@@ -165,7 +165,7 @@ hr {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .routes{
@@ -183,3 +183,8 @@ hr {
 .route-link:hover{
     color: rgb(0, 0, 0);
 }
+
+.hero-container{
+    max-height: 700px;
+}
+

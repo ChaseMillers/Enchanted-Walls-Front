@@ -51,16 +51,15 @@ const Home = () => {
 
     return (
         <Layout
-            heroImage="https://i.imgur.com/BTK1oc9.jpg"
-            link="product/5e5f1427cf5ed200247d1656"
             className="home-container"
+            animation="true"
         >
+        
         {/* <Search /> */}
         {showBestSellers()}
         <Suspense fallback={<div></div>}>
         <MyCarousel />
         </Suspense>
-        <div className="ad-container"></div>
         </Layout>
     );
 };

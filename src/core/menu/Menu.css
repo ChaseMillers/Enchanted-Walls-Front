@@ -110,11 +110,14 @@ li.sign-item {
     margin-top: 15px;
     float: left;
     text-decoration: none;
+    font-family: 'Oleo Script', cursive;
+  }
+  .logo h1 {
+    color: black;
+    font-size: 30px;
+    margin: 15px 0 0 12px;
   }
 
-  .logo img{
-    width: 250px;
-    }
   .sign-dot{
     color: white;
     margin-right: -20px;
@@ -254,5 +257,9 @@ li.sign-item {
       right: 0px;
       display: initial;
       border: none;
+    }
+    .logo h1 {
+      font-size: 50px;
+      margin: 10px 0 0 12px;
     }
 }
