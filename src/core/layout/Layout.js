@@ -32,7 +32,7 @@ const Layout = ({
                             ></img>
                         </Link>
                         )
-                    };
+                    }
 
                     {animation && (
                             <Animation />

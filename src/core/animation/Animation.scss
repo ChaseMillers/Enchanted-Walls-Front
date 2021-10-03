@@ -4,15 +4,15 @@
 }
 
 svg.animation {
-	max-width: 1200px;
+	max-width: 1000px;
     position: absolute;
-    top: 0;
+    top: -21px;;
 }
 
 .backdrop-container {
-    top: 0;
+    top: -21px;
     position: absolute;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 /********** FIRE Animation**********/
@@ -29,9 +29,9 @@ $partSize: 5em;
     filter: blur(0.02em);
     -webkit-filter: blur(0.02em);
     position: relative;
-    width: 7em;
+    width: 3vw;
     margin-left: 9%;
-    margin-top: 51.7%;
+    margin-top: 51%;
 }
 .particle {
 	animation: rise $dur ease-in infinite;
@@ -64,53 +64,53 @@ $partSize: 5em;
 		transform: translateY(-10em) scale(0);
 	}
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1000px){
 	.fire {
-		font-size: 6px;
-		margin-left: 109px;
-		margin-top: 621px;
+		font-size: 5px;
+		margin-left: 87px;
+		margin-top: 512px;
 	}
 }
 @media screen and (max-width: 900px){
 	.fire {
-		margin-top: 51.3%;
+		margin-top: 51%;
+	}
+}
+@media screen and (max-width: 800px){
+	.fire {
+		margin-top: 50.4%;
 	}
 }
 @media screen and (max-width: 600px){
 	.fire {
-		margin-top: 50.3%;
+		margin-top: 49.6%;
 	}
 }
 @media screen and (max-width: 500px){
 	.fire {
-		margin-top: 50%;
+		margin-top: 48.7%;
 	}
 }
 @media screen and (max-width: 400px){
 	.fire {
-		margin-top: 49%;
+		margin-top: 47.9%;
 	}
 }
-@media screen and (max-width: 300px){
-	.fire {
-		margin-top: 48%;
-	}
-}
-@media screen and (max-width: 200px){
+@media screen and (max-width: 350px){
 	.fire {
 		margin-top: 47%;
 	}
 }
-
-
-
-
-
+@media screen and (max-width: 300px){
+	.fire {
+		margin-top: 46%;
+	}
+}
 
 /* Stick Arm! */
 
 use#stickArm{
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: stickArm;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -146,7 +146,7 @@ use#head{
 
 /* Arm2nd */
 use#stick2nd{
-    animation-duration: 4s;
+    animation-duration: 3s;
 
     animation-name: stick2nd;
 	-webkit-animation-name: stick2nd;
@@ -165,18 +165,60 @@ use#stick2nd{
 		}
   }
 
+//   Tail Waving
+use#tail{
+    animation-duration: 1s;
+
+    animation-name: tail;
+	-webkit-animation-name: tail;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes tail {
+    from {
+        transform: scaleX(1);
+    }
   
+    to {
+        transition: all 5s ease;
+		transform: translateX(-89px) translateY(134px) rotate(-7deg);
+		}
+  }
+
+
   /* Wave Arm on hover */
-use#waveArm{
-	transition: all 1s ease;
+.arm{
+	transition: all .8s ease;
 }
 
-
-use#hover:hover use#waveArm{
-    animation-duration: 1s;
-	-webkit-animation-duration: 1s;
+.arm-wave:hover .arm{
 	-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
 	animation-fill-mode: forwards;
 
-	transform: translateX(145px) translateY(-141px) rotate(10deg);
+	transform: translateX(2px) translateY(-22px) rotate(20deg);
+	-webkit-transform: translateX(2px) translateY(-22px) rotate(20deg);
 }
+
+.arm-wave{
+	margin-top: 36.5vw;
+    margin-left: 40.4vw;
+    width: 15.4vw;
+}
+
+.arm-wave-container{
+	max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+}
+
+@media screen and (min-width: 1000px){
+	.arm-wave {
+		margin-top: 363.1px;
+		margin-left: 401px;
+		width: 158.4px;
+	}
+}
+
+
