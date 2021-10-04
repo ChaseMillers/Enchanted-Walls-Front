@@ -4,6 +4,16 @@ import {ReactComponent as RacoonSVG} from './racoonAnimation.svg';
 import Fire from './fireAnimation'
 
 const Animation = () => {
+
+  let armWave = document.querySelector('use#waveArm')
+
+  function changeBackground(e) {
+    armWave.style.transform = 'translateX(218px) translateY(-205px) rotate(15deg)';
+  }
+  function changeBackgroundback(e) {
+    armWave.style.transform = 'scaleX(1)';
+  }
+
   return(
     <div className='img-layout-container'>
       <div className="backdrop-container">
@@ -14,12 +24,12 @@ const Animation = () => {
       </div>
       <Fire />
       <RacoonSVG />
-      <div className='arm-wave-container'>
-        <div className='arm-wave'>
-          <img 
-            className="arm" 
-            src="images/arm.png"
-            alt="arm wave from racoon"/>
+      <div 
+      className='hover-container' 
+      onMouseLeave={changeBackgroundback}
+      onMouseOver={changeBackground}>
+        <div
+          className='hover-cutout'>
         </div>
       </div>
     </div>

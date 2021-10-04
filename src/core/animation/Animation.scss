@@ -188,37 +188,36 @@ use#tail{
 
 
   /* Wave Arm on hover */
-.arm{
-	transition: all .8s ease;
-}
-
-.arm-wave:hover .arm{
+use#waveArm{
+	transition: all .5s ease;
 	-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
 	animation-fill-mode: forwards;
-
-	transform: translateX(2px) translateY(-22px) rotate(20deg);
-	-webkit-transform: translateX(2px) translateY(-22px) rotate(20deg);
 }
 
-.arm-wave{
-	margin-top: 36.5vw;
-    margin-left: 40.4vw;
-    width: 15.4vw;
-}
-
-.arm-wave-container{
+.hover-container{
 	max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
+	margin-top: 34vw;
+    margin-right: 7vw;
     position: absolute;
+    // For checking bounding box location while editing
+	// opacity: .5; 
+    // background-color: green;
+}
+
+.hover-cutout{
+	margin-top: 16.5vw;
+	width: 14.4vw;
 }
 
 @media screen and (min-width: 1000px){
-	.arm-wave {
-		margin-top: 363.1px;
-		margin-left: 401px;
-		width: 158.4px;
+	.hover-container {
+		margin-top: 352.1px;
+		margin-right: 73px;
+		width: 130px;
+	}
+	.hover-cutout {
+		margin-top: 157.5px;
+		width: 121px;
 	}
 }
-
 
