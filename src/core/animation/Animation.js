@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import "./Animation.scss";
 import {ReactComponent as RacoonSVG} from './racoonAnimation.svg';
 import Fire from './fireAnimation'
 
 const Animation = () => {
 
-  let armWave = document.querySelector('use#waveArm')
+  const [data, setData] = useState({hover: false});
 
-  function changeBackground(e) {
-    armWave.style.transform = 'translateX(218px) translateY(-205px) rotate(15deg)';
-  }
-  function changeBackgroundback(e) {
-    armWave.style.transform = 'scaleX(1)';
+  useEffect(() => {
+      changeBackground(data.hover)
+  },[data.hover]) 
+
+  const changeBackground=(toggle)=> {
+    const armWave = document.querySelector('#waveArm')
+    toggle ? armWave.style.transform = 'translateX(218px) translateY(-205px) rotate(15deg)'
+    : armWave.style.transform = 'scaleX(1)';
   }
 
   return(
@@ -24,14 +27,15 @@ const Animation = () => {
       </div>
       <Fire />
       <RacoonSVG />
-      <div 
-      className='hover-container' 
-      onMouseLeave={changeBackgroundback}
-      onMouseOver={changeBackground}>
-        <div
-          className='hover-cutout'>
+      {RacoonSVG &&(
+        <div 
+          className='hover-container'
+          onMouseOver={()=>setData({ hover: true })}
+          onMouseLeave={()=>setData({ hover: false })}
+          >
+            <div className='hover-target'></div> 
         </div>
-      </div>
+      )}
     </div>
   )
  
