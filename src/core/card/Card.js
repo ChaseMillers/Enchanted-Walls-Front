@@ -49,12 +49,14 @@ const Card = ({
   };
 
   const showAddToCart = showAddToCartButton => {
+    const menuBox = document.querySelector('#menu-btn')
     return (
       showAddToCartButton && (
         <button
           onClick={() => {
             addItem(product, () => {});
             dispatch({ type: types.OPEN_CART });
+            menuBox.checked = true;
           }}
           className="button-yellow"
         >
