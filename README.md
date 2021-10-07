@@ -1,6 +1,6 @@
 ## Front End
  
-## Live - https://beverage-ecommerce-template.netlify.com/
+## Live - https://enchanted-walls.netlify.app/
  
 ## Summary
 features: admin add/delete, track, and change products from dashboard, automated emails, product sorting/listing. 
