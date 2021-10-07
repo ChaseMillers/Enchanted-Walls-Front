@@ -60,7 +60,7 @@ const Product = props => {
 
     return (
         <Layout
-            routes={Routes()}
+            routes={<Routes />}
             imageClassName="no-banner-image"
             className="product-container"
         >

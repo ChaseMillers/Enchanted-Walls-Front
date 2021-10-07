@@ -45,9 +45,9 @@ const Cart = () => {
 
     return (
         <div>
-        <div className="header">
-            <a href="/" className="logo"><img src="/images/swash-caps.webp" alt="Logo"/></a>
-        </div>
+        <a href="/" className="logo">
+        <h1>Enchanted Walls</h1><img src='images/logo.jpg' alt='Enchanted Walls Logo' class='logo-img'></img>
+        </a>
         <div className="cart-row-summary">
                 <Checkout products={items} setRun={setRun} run={run} />
                 <div className={items.length > 0 ? "items-container-summary": "no-Warning-summary"}>

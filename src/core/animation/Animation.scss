@@ -1,6 +1,7 @@
 .img-layout-container{
     display: flex;
     justify-content: center;
+	margin-bottom: 120px;
 }
 
 svg.animation {
@@ -14,6 +15,7 @@ svg.animation {
     position: absolute;
     max-width: 1000px;
 }
+
 
 /********** FIRE Animation**********/
 $fireColor: rgb(255,80,0);
@@ -31,7 +33,8 @@ $partSize: 5em;
     position: relative;
     width: 3vw;
     margin-left: 9%;
-    margin-top: 51%;
+    margin-top: 51vw;
+	
 }
 .particle {
 	animation: rise $dur ease-in infinite;
@@ -64,6 +67,7 @@ $partSize: 5em;
 		transform: translateY(-10em) scale(0);
 	}
 }
+
 @media screen and (min-width: 1000px){
 	.fire {
 		font-size: 5px;
