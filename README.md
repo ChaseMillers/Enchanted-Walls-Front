@@ -3,6 +3,7 @@
 ## Live - https://enchanted-walls.netlify.app/
  
 ## Summary
+A fully custom built e-commerce website. 
 features: admin add/delete, track, and change products from dashboard, automated emails, product sorting/listing. 
 
 ## Tools
