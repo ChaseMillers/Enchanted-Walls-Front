@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Signin = () => {
     const [values, setValues] = useState({
-        email: "testing@gmail.com",
+        email: "AdminTester@gmail.com",
         password: "123456",
         error: "",
         loading: false,

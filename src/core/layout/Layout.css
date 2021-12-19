@@ -11,6 +11,8 @@ body {
     font-size: 16px;
     font-weight: 300;
     background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
